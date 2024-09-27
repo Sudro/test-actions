@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: update information about packets
-        run: apt-get update
+        run: sudo apt-get update
       - name: update packets
-        run: apt-get upgrade
+        run: sudo apt-get upgrade
