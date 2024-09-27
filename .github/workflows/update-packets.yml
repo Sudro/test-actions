@@ -1,0 +1,10 @@
+name: update-packets
+on: push
+jobs:
+  update-packets-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: update information about packets
+        run: apt get update
+      - name: update packets
+        run: apt get upgrade
